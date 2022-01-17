@@ -1,0 +1,2180 @@
+*,
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  color: #0B384E;
+  font-family: 'Varela', sans-serif;
+  scrollbar-width: thin; }
+
+::-webkit-scrollbar {
+  width: 5px; }
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2); }
+
+::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey; }
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none !important; }
+
+input:focus,
+a:hover,
+a:focus,
+a:active,
+button:focus,
+select:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  color: rgba(17, 17, 17, 0.84) !important; }
+
+.form-control:focus,
+.form-control:active {
+  box-shadow: none !important; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0; }
+
+h1 {
+  font-size: 80px; }
+
+h2 {
+  font-size: 52px; }
+
+h3 {
+  font-size: 46px; }
+
+h1,
+h2,
+h3 {
+  font-weight: 600; }
+
+.btn,
+.btn:hover,
+.btn:focus,
+.btn:active {
+  box-shadow: none !important;
+  outline: none !important;
+  border-radius: 0; }
+
+/*CUSTOM FONTS*/
+@font-face {
+  font-family: "OpenSans";
+  src: url("../../vendors/fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: "SourceSans";
+  src: url("../../vendors/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: "SourceSansBold";
+  src: url("../../vendors/fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf") format("truetype"); }
+@font-face {
+  font-family: "Varela";
+  src: url("../../vendors/fonts/Varela/Varela-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: "Poppins";
+  src: url("../../vendors/fonts/Poppins/Poppins-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../../vendors/fonts/Poppins/Poppins-Medium.ttf") format("truetype"); }
+@font-face {
+  font-family: "Delius";
+  src: url("../../vendors/fonts/Delius/Delius-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: "ABeeZee";
+  src: url("../../vendors/fonts/ABeeZee/ABeeZee-Regular.ttf") format("truetype"); }
+.workstream .workstream-container .left-menu-nav {
+  padding: 0.5em 2em;
+  width: 10%;
+  height: 100vh;
+  position: fixed; }
+  @media screen and (max-width: 1244px) {
+    .workstream .workstream-container .left-menu-nav {
+      width: 160px !important;
+      z-index: 1;
+      background: #f5f5f5 !important;
+      left: -100%; } }
+  .workstream .workstream-container .left-menu-nav .title {
+    font-family: "OpenSans", serif;
+    color: #9060f4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; }
+    .workstream .workstream-container .left-menu-nav .title .left_menu_nav_closeBTN {
+      font-size: 20px;
+      position: absolute;
+      right: -25px;
+      cursor: pointer;
+      display: none; }
+  .workstream .workstream-container .left-menu-nav .nav-list .lists {
+    font-family: 'ABeeZee', serif;
+    font-size: 0.9em;
+    list-style: none;
+    margin: 0.8em 0;
+    color: rgba(0, 0, 0, 0.65);
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    gap: 10px; }
+    .workstream .workstream-container .left-menu-nav .nav-list .lists .fa {
+      font-size: 21px; }
+    .workstream .workstream-container .left-menu-nav .nav-list .lists .name {
+      letter-spacing: 0.5px; }
+    .workstream .workstream-container .left-menu-nav .nav-list .lists .tweet {
+      background-color: #9060f4;
+      color: white;
+      font-family: "Poppins-Bold", serif;
+      letter-spacing: 0.5px;
+      transition: .5s all;
+      border-radius: 2em;
+      font-size: 12px;
+      border: none;
+      width: 100%;
+      height: 30px;
+      cursor: pointer; }
+    .workstream .workstream-container .left-menu-nav .nav-list .lists.active {
+      background: rgba(99, 99, 255, 0.36);
+      color: #9060f4; }
+.workstream .workstream-container .environment {
+  width: 85%;
+  background: #f5f5f5;
+  height: 100vh;
+  margin-left: 15%;
+  position: fixed;
+  display: flex; }
+  .workstream .workstream-container .environment .users-list {
+    width: 5%;
+    text-align: center; }
+    @media screen and (max-width: 1244px) {
+      .workstream .workstream-container .environment .users-list {
+        left: -100%;
+        width: 85px;
+        text-align: center;
+        height: 100vh;
+        background: #f5f5f5;
+        position: fixed;
+        z-index: 1; } }
+    .workstream .workstream-container .environment .users-list .usl {
+      list-style: none; }
+      @media screen and (max-width: 1244px) {
+        .workstream .workstream-container .environment .users-list .usl {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 60px;
+          z-index: 1;
+          gap: 10px; } }
+      .workstream .workstream-container .environment .users-list .usl .list {
+        margin: 5px 0;
+        cursor: pointer;
+        position: relative; }
+        .workstream .workstream-container .environment .users-list .usl .list.close-userlist {
+          display: none; }
+          @media screen and (max-width: 1244px) {
+            .workstream .workstream-container .environment .users-list .usl .list.close-userlist {
+              display: block; } }
+        .workstream .workstream-container .environment .users-list .usl .list .total-members {
+          list-style: none;
+          background-color: #f5f5f5;
+          position: absolute;
+          top: -17px;
+          width: 220px;
+          left: 50px;
+          z-index: 1;
+          border-radius: 5px;
+          box-shadow: 1px 6px 7px 1px rgba(0, 0, 0, 0.16);
+          transition: .5s all;
+          padding: 17px;
+          display: none; }
+          .workstream .workstream-container .environment .users-list .usl .list .total-members::after {
+            content: "";
+            position: absolute;
+            top: 19%;
+            right: 100%;
+            border-width: 7px;
+            border-style: solid;
+            border-color: transparent #f5f5f5 transparent transparent; }
+          .workstream .workstream-container .environment .users-list .usl .list .total-members .total {
+            font-size: 12px;
+            font-family: "Poppins-Bold";
+            letter-spacing: 0.5px;
+            text-transform: capitalize;
+            color: #1b2733;
+            text-align: center; }
+          .workstream .workstream-container .environment .users-list .usl .list .total-members .includes {
+            font-size: 12px;
+            font-family: "Poppins-Bold";
+            letter-spacing: 0.5px;
+            text-transform: capitalize;
+            color: #6d6d6d;
+            text-align: center;
+            margin-top: 10px; }
+        .workstream .workstream-container .environment .users-list .usl .list:hover .options, .workstream .workstream-container .environment .users-list .usl .list:hover .total-members {
+          display: block; }
+        .workstream .workstream-container .environment .users-list .usl .list .options {
+          list-style: none;
+          background-color: #f5f5f5;
+          position: absolute;
+          width: 220px;
+          z-index: 1;
+          border-radius: 5px 0 5px 5px;
+          box-shadow: 1px 6px 7px 1px rgba(0, 0, 0, 0.16);
+          transition: .5s all;
+          display: none; }
+          .workstream .workstream-container .environment .users-list .usl .list .options .uu {
+            margin: unset;
+            list-style: none; }
+            .workstream .workstream-container .environment .users-list .usl .list .options .uu .uu-li {
+              font-size: 12px;
+              font-family: "Poppins-Bold";
+              letter-spacing: 0.5px;
+              text-transform: capitalize;
+              color: dimgray;
+              margin: -1px 0;
+              text-align: left;
+              padding: 7px 0 7px 23px; }
+              .workstream .workstream-container .environment .users-list .usl .list .options .uu .uu-li:hover {
+                background-color: white; }
+              .workstream .workstream-container .environment .users-list .usl .list .options .uu .uu-li:first-child {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.23); }
+              .workstream .workstream-container .environment .users-list .usl .list .options .uu .uu-li:nth-child(3) {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.23); }
+        .workstream .workstream-container .environment .users-list .usl .list .add, .workstream .workstream-container .environment .users-list .usl .list .team {
+          font-size: 12px;
+          margin: 1em 0;
+          font-family: "Poppins-Bold";
+          letter-spacing: 0.5px;
+          text-transform: capitalize;
+          color: #9060f4;
+          text-align: center;
+          cursor: pointer; }
+        .workstream .workstream-container .environment .users-list .usl .list .fa {
+          height: 30px;
+          width: 30px;
+          border-radius: 50%;
+          background: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 20px;
+          color: #9060f4;
+          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.15);
+          margin: 0 auto 10px auto; }
+        .workstream .workstream-container .environment .users-list .usl .list .usr-dp {
+          height: 30px;
+          width: 30px;
+          border-radius: 50%;
+          box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.15);
+          object-position: center;
+          object-fit: cover; }
+  .workstream .workstream-container .environment .chat-environment {
+    background: white;
+    width: 70%;
+    height: 98vh;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.16); }
+    .workstream .workstream-container .environment .chat-environment.job_chat {
+      display: none; }
+    .workstream .workstream-container .environment .chat-environment .header {
+      padding: 0 2em;
+      display: flex;
+      border-bottom: 1px solid #f5f5f5;
+      height: 15%;
+      justify-content: space-between; }
+      .workstream .workstream-container .environment .chat-environment .header .left {
+        display: flex;
+        align-items: center; }
+        .workstream .workstream-container .environment .chat-environment .header .left.left {
+          position: relative; }
+        .workstream .workstream-container .environment .chat-environment .header .left .topic {
+          margin-left: 10px; }
+          .workstream .workstream-container .environment .chat-environment .header .left .topic .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 10px; }
+            .workstream .workstream-container .environment .chat-environment .header .left .topic .contact-info .pf-container {
+              position: relative; }
+              .workstream .workstream-container .environment .chat-environment .header .left .topic .contact-info .pf-container .pf {
+                height: 45px;
+                width: 45px;
+                border-radius: 50%;
+                object-position: center;
+                object-fit: cover; }
+              .workstream .workstream-container .environment .chat-environment .header .left .topic .contact-info .pf-container .fa {
+                font-size: 9px;
+                color: green;
+                position: absolute;
+                bottom: 6px;
+                right: 0; }
+            .workstream .workstream-container .environment .chat-environment .header .left .topic .contact-info .contact-name {
+              font-family: "Poppins-Bold", serif;
+              font-size: 14px;
+              letter-spacing: 0.5px; }
+          .workstream .workstream-container .environment .chat-environment .header .left .topic .pp {
+            font-family: 'Poppins-Bold',SansSerif;
+            letter-spacing: 0.5px;
+            color: rgba(0, 0, 0, 0.81);
+            font-size: 15px; }
+            @media screen and (max-width: 600px) {
+              .workstream .workstream-container .environment .chat-environment .header .left .topic .pp {
+                width: 180px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis; } }
+            @media screen and (max-width: 480px) {
+              .workstream .workstream-container .environment .chat-environment .header .left .topic .pp {
+                width: 100px; } }
+          .workstream .workstream-container .environment .chat-environment .header .left .topic .option {
+            display: flex;
+            gap: 15px;
+            position: absolute;
+            bottom: 5px;
+            left: 3em; }
+            .workstream .workstream-container .environment .chat-environment .header .left .topic .option .p {
+              font-family: 'Poppins-Bold',SansSerif;
+              letter-spacing: 0.5px;
+              color: rgba(0, 0, 0, 0.81);
+              font-size: 13px;
+              display: flex;
+              gap: 5px; }
+              .workstream .workstream-container .environment .chat-environment .header .left .topic .option .p .fa {
+                font-size: 18px; }
+        .workstream .workstream-container .environment .chat-environment .header .left .fa {
+          cursor: pointer; }
+          .workstream .workstream-container .environment .chat-environment .header .left .fa:last-child {
+            color: rgba(0, 0, 0, 0.43); }
+          .workstream .workstream-container .environment .chat-environment .header .left .fa:not(:last-child) {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            color: #9060f4; }
+        .workstream .workstream-container .environment .chat-environment .header .left .userList-rp {
+          margin-right: 20px;
+          display: none; }
+          @media screen and (max-width: 1244px) {
+            .workstream .workstream-container .environment .chat-environment .header .left .userList-rp {
+              display: flex;
+              margin-right: 5px; } }
+        .workstream .workstream-container .environment .chat-environment .header .left .rightnav-rp {
+          display: none;
+          margin-right: 20px; }
+          @media screen and (max-width: 1244px) {
+            .workstream .workstream-container .environment .chat-environment .header .left .rightnav-rp {
+              display: flex; } }
+          @media screen and (max-width: 991px) {
+            .workstream .workstream-container .environment .chat-environment .header .left .rightnav-rp {
+              display: none; } }
+        .workstream .workstream-container .environment .chat-environment .header .left .goto_chatlist {
+          margin-right: 20px;
+          display: none; }
+          @media screen and (max-width: 1244px) {
+            .workstream .workstream-container .environment .chat-environment .header .left .goto_chatlist {
+              display: none;
+              margin-right: 5px; } }
+          @media screen and (max-width: 991px) {
+            .workstream .workstream-container .environment .chat-environment .header .left .goto_chatlist {
+              display: flex; } }
+      .workstream .workstream-container .environment .chat-environment .header .right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 15px; }
+        @media screen and (max-width: 600px) {
+          .workstream .workstream-container .environment .chat-environment .header .right {
+            gap: 5px; } }
+        .workstream .workstream-container .environment .chat-environment .header .right .budget {
+          background-color: rgba(240, 240, 240, 0.74);
+          color: #9060f4;
+          font-family: 'Poppins-Bold',SansSerif;
+          letter-spacing: 0.5px;
+          transition: .5s all;
+          border-radius: 0 2em 2em 2em;
+          font-size: 12px;
+          border: none;
+          width: 125px;
+          height: 40px;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 3px; }
+          .workstream .workstream-container .environment .chat-environment .header .right .budget .fa {
+            font-size: 18px;
+            color: #9060f4; }
+        .workstream .workstream-container .environment .chat-environment .header .right .header-option {
+          border: none;
+          font-size: 25px;
+          color: dimgray;
+          cursor: pointer;
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+          transition: 0.5s all;
+          background-color: transparent;
+          position: relative; }
+          .workstream .workstream-container .environment .chat-environment .header .right .header-option .more-option {
+            background: white;
+            position: absolute;
+            right: -15px;
+            width: 180px;
+            display: none;
+            padding: 6px 0;
+            top: 32px;
+            box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.18);
+            margin: auto;
+            border-radius: 3px;
+            z-index: 1; }
+            @media screen and (max-width: 991px) {
+              .workstream .workstream-container .environment .chat-environment .header .right .header-option .more-option {
+                right: 0; } }
+            .workstream .workstream-container .environment .chat-environment .header .right .header-option .more-option .hr-ul {
+              list-style: none; }
+              .workstream .workstream-container .environment .chat-environment .header .right .header-option .more-option .hr-ul .hr-li {
+                height: 31px;
+                display: flex;
+                align-items: center;
+                font-family: "ABeeZee", sans-serif;
+                font-size: 14px;
+                letter-spacing: 0.4px;
+                cursor: pointer;
+                padding: 0 8px;
+                justify-content: space-between;
+                color: rgba(0, 0, 0, 0.52); }
+                .workstream .workstream-container .environment .chat-environment .header .right .header-option .more-option .hr-ul .hr-li .amount {
+                  padding: 4px;
+                  border-radius: 2px; }
+                .workstream .workstream-container .environment .chat-environment .header .right .header-option .more-option .hr-ul .hr-li:hover {
+                  background-color: rgba(107, 160, 236, 0.27); }
+          .workstream .workstream-container .environment .chat-environment .header .right .header-option:hover {
+            background: rgba(0, 0, 0, 0.16); }
+    .workstream .workstream-container .environment .chat-environment .convo-box {
+      height: 75%;
+      padding: 0 2em;
+      overflow: auto; }
+      .workstream .workstream-container .environment .chat-environment .convo-box .chat-container {
+        margin: 10px 0; }
+        .workstream .workstream-container .environment .chat-environment .convo-box .chat-container .sender {
+          display: flex;
+          align-items: flex-end;
+          gap: 11px;
+          justify-content: flex-end;
+          margin-bottom: 1em; }
+          .workstream .workstream-container .environment .chat-environment .convo-box .chat-container .sender .chat .name {
+            font-size: 12px;
+            font-family: 'ABeeZee',SansSerif;
+            letter-spacing: 0.5px;
+            text-transform: capitalize;
+            color: #9060f4;
+            margin-left: 15px; }
+          .workstream .workstream-container .environment .chat-environment .convo-box .chat-container .sender .chat .message {
+            background-color: #9060f4;
+            color: white;
+            margin-top: 5px;
+            padding: 0.8em;
+            border-radius: 15px 15px 7px 15px;
+            position: relative;
+            max-width: 26vw; }
+            @media screen and (max-width: 991px) {
+              .workstream .workstream-container .environment .chat-environment .convo-box .chat-container .sender .chat .message {
+                max-width: 91%; } }
+            .workstream .workstream-container .environment .chat-environment .convo-box .chat-container .sender .chat .message::after {
+              content: "";
+              position: absolute;
+              left: 94%;
+              bottom: -10px;
+              border-width: 10px;
+              transform: rotate(135deg);
+              border-style: solid;
+              border-color: transparent transparent transparent #9060f4; }
+            .workstream .workstream-container .environment .chat-environment .convo-box .chat-container .sender .chat .message .msg-text {
+              font-size: 13px;
+              font-family: 'ABeeZee',SansSerif;
+              letter-spacing: 0.5px;
+              text-transform: capitalize;
+              line-height: 2em; }
+            .workstream .workstream-container .environment .chat-environment .convo-box .chat-container .sender .chat .message .msg-time {
+              font-size: 10px;
+              font-family: 'Poppins-Bold',SansSerif;
+              letter-spacing: 0.5px;
+              color: #d5d5d5; }
+          .workstream .workstream-container .environment .chat-environment .convo-box .chat-container .sender .usr-dp {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            object-position: center;
+            object-fit: cover; }
+        .workstream .workstream-container .environment .chat-environment .convo-box .chat-container .receiver {
+          display: flex;
+          align-items: flex-end;
+          gap: 11px;
+          margin-bottom: 1em; }
+          .workstream .workstream-container .environment .chat-environment .convo-box .chat-container .receiver .chat .name {
+            font-size: 12px;
+            font-family: 'ABeeZee',SansSerif;
+            letter-spacing: 0.5px;
+            text-transform: capitalize;
+            color: #9060f4;
+            margin-left: 15px; }
+          .workstream .workstream-container .environment .chat-environment .convo-box .chat-container .receiver .chat .message {
+            background-color: #f5f5f5;
+            color: rgba(0, 0, 0, 0.75);
+            margin-top: 5px;
+            padding: 0.8em;
+            border-radius: 15px 15px 15px 7px;
+            position: relative;
+            max-width: 26vw; }
+            .workstream .workstream-container .environment .chat-environment .convo-box .chat-container .receiver .chat .message::after {
+              content: "";
+              position: absolute;
+              right: 95%;
+              bottom: -10px;
+              border-width: 10px;
+              transform: rotate(47deg);
+              border-style: solid;
+              border-color: transparent transparent transparent #f5f5f5; }
+            @media screen and (max-width: 991px) {
+              .workstream .workstream-container .environment .chat-environment .convo-box .chat-container .receiver .chat .message {
+                max-width: 91%; } }
+            .workstream .workstream-container .environment .chat-environment .convo-box .chat-container .receiver .chat .message .msg-text {
+              font-size: 13px;
+              font-family: 'ABeeZee',SansSerif;
+              letter-spacing: 0.5px;
+              text-transform: capitalize;
+              line-height: 2em; }
+              .workstream .workstream-container .environment .chat-environment .convo-box .chat-container .receiver .chat .message .msg-text .at {
+                font-size: 12px;
+                font-family: 'ABeeZee';
+                letter-spacing: 0.5px;
+                color: #9060f4; }
+            .workstream .workstream-container .environment .chat-environment .convo-box .chat-container .receiver .chat .message .msg-imgs {
+              display: grid;
+              grid-gap: 10px 10px;
+              grid-template-columns: auto auto auto; }
+              @media screen and (max-width: 400px) {
+                .workstream .workstream-container .environment .chat-environment .convo-box .chat-container .receiver .chat .message .msg-imgs {
+                  grid-template-columns: auto auto; } }
+              .workstream .workstream-container .environment .chat-environment .convo-box .chat-container .receiver .chat .message .msg-imgs .msg-img {
+                border-radius: 5px;
+                object-fit: cover;
+                object-position: center;
+                height: 56px;
+                width: 85px; }
+            .workstream .workstream-container .environment .chat-environment .convo-box .chat-container .receiver .chat .message .msg-time {
+              font-size: 10px;
+              font-family: 'Poppins-Bold',SansSerif;
+              letter-spacing: 0.5px;
+              color: rgba(0, 0, 0, 0.71); }
+          .workstream .workstream-container .environment .chat-environment .convo-box .chat-container .receiver .usr-dp {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            object-position: center;
+            object-fit: cover; }
+      .workstream .workstream-container .environment .chat-environment .convo-box .Job-chat-container {
+        margin: 10px 0; }
+        .workstream .workstream-container .environment .chat-environment .convo-box .Job-chat-container .sender {
+          display: flex;
+          align-items: flex-end;
+          gap: 11px;
+          justify-content: flex-end;
+          margin-bottom: 1em; }
+          .workstream .workstream-container .environment .chat-environment .convo-box .Job-chat-container .sender .chat .name {
+            font-size: 11px;
+            font-family: "Poppins-Bold";
+            letter-spacing: 0.5px;
+            text-transform: capitalize;
+            color: #9060f4;
+            margin-left: 15px; }
+          .workstream .workstream-container .environment .chat-environment .convo-box .Job-chat-container .sender .chat .message {
+            background-color: #9060f4;
+            color: white;
+            margin-top: 5px;
+            padding: 0.8em;
+            border-radius: 15px 15px 7px 15px;
+            position: relative;
+            max-width: 26vw; }
+            @media screen and (max-width: 991px) {
+              .workstream .workstream-container .environment .chat-environment .convo-box .Job-chat-container .sender .chat .message {
+                max-width: 70vw; } }
+            .workstream .workstream-container .environment .chat-environment .convo-box .Job-chat-container .sender .chat .message::after {
+              content: "";
+              position: absolute;
+              left: 95%;
+              bottom: -10px;
+              border-width: 10px;
+              transform: rotate(135deg);
+              border-style: solid;
+              border-color: transparent transparent transparent #9060f4; }
+              @media screen and (max-width: 400px) {
+                .workstream .workstream-container .environment .chat-environment .convo-box .Job-chat-container .sender .chat .message::after::after {
+                  left: 93%; } }
+            .workstream .workstream-container .environment .chat-environment .convo-box .Job-chat-container .sender .chat .message .msg-text {
+              font-size: 11px;
+              font-family: "ABeeZee";
+              letter-spacing: 0.5px;
+              text-transform: capitalize;
+              line-height: 2em; }
+            .workstream .workstream-container .environment .chat-environment .convo-box .Job-chat-container .sender .chat .message .add-ons {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin: 1em 0; }
+              .workstream .workstream-container .environment .chat-environment .convo-box .Job-chat-container .sender .chat .message .add-ons .description .text {
+                width: 130px;
+                display: flex;
+                align-items: center;
+                font-family: "Poppins-Bold", sans-serif;
+                font-size: 14px;
+                letter-spacing: 0.4px;
+                cursor: pointer;
+                justify-content: space-between;
+                height: 35px; }
+                .workstream .workstream-container .environment .chat-environment .convo-box .Job-chat-container .sender .chat .message .add-ons .description .text .amount {
+                  color: rgba(0, 0, 0, 0.52); }
+              .workstream .workstream-container .environment .chat-environment .convo-box .Job-chat-container .sender .chat .message .add-ons .choice {
+                display: flex;
+                flex-direction: column;
+                gap: 7px; }
+                .workstream .workstream-container .environment .chat-environment .convo-box .Job-chat-container .sender .chat .message .add-ons .choice .hire, .workstream .workstream-container .environment .chat-environment .convo-box .Job-chat-container .sender .chat .message .add-ons .choice .decline {
+                  background-color: white;
+                  border: 1px solid #9060f4;
+                  height: 35px;
+                  width: 88px;
+                  border-radius: 0 11px 11px 11px;
+                  font-family: "OpenSans", sans-serif;
+                  letter-spacing: 0.5px;
+                  float: right;
+                  font-size: 12px;
+                  color: black;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  cursor: pointer;
+                  gap: 4px; }
+                  .workstream .workstream-container .environment .chat-environment .convo-box .Job-chat-container .sender .chat .message .add-ons .choice .hire:hover, .workstream .workstream-container .environment .chat-environment .convo-box .Job-chat-container .sender .chat .message .add-ons .choice .decline:hover {
+                    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.18);
+                    background: wheat; }
+                  .workstream .workstream-container .environment .chat-environment .convo-box .Job-chat-container .sender .chat .message .add-ons .choice .hire .icon, .workstream .workstream-container .environment .chat-environment .convo-box .Job-chat-container .sender .chat .message .add-ons .choice .decline .icon {
+                    font-size: 20px; }
+            .workstream .workstream-container .environment .chat-environment .convo-box .Job-chat-container .sender .chat .message .msg-time {
+              font-size: 10px;
+              font-family: "OpenSans";
+              letter-spacing: 0.5px;
+              color: #d5d5d5; }
+          .workstream .workstream-container .environment .chat-environment .convo-box .Job-chat-container .sender .usr-dp {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            object-position: center;
+            object-fit: cover; }
+        .workstream .workstream-container .environment .chat-environment .convo-box .Job-chat-container .receiver {
+          display: flex;
+          align-items: flex-end;
+          gap: 11px;
+          margin-bottom: 1em; }
+          .workstream .workstream-container .environment .chat-environment .convo-box .Job-chat-container .receiver .chat .name {
+            font-size: 11px;
+            font-family: "Poppins-Bold";
+            letter-spacing: 0.5px;
+            text-transform: capitalize;
+            color: #9060f4;
+            margin-left: 15px; }
+          .workstream .workstream-container .environment .chat-environment .convo-box .Job-chat-container .receiver .chat .message {
+            background-color: #f5f5f5;
+            color: rgba(0, 0, 0, 0.75);
+            margin-top: 5px;
+            padding: 0.8em;
+            border-radius: 15px 15px 15px 7px;
+            position: relative;
+            max-width: 26vw; }
+            .workstream .workstream-container .environment .chat-environment .convo-box .Job-chat-container .receiver .chat .message::after {
+              content: "";
+              position: absolute;
+              right: 95%;
+              bottom: -10px;
+              border-width: 10px;
+              transform: rotate(47deg);
+              border-style: solid;
+              border-color: transparent transparent transparent #f5f5f5; }
+            .workstream .workstream-container .environment .chat-environment .convo-box .Job-chat-container .receiver .chat .message .msg-text {
+              font-size: 11px;
+              font-family: "Poppins-Bold";
+              letter-spacing: 0.5px;
+              text-transform: capitalize;
+              line-height: 2em; }
+              .workstream .workstream-container .environment .chat-environment .convo-box .Job-chat-container .receiver .chat .message .msg-text .at {
+                font-size: 11px;
+                font-family: "Poppins-Bold";
+                letter-spacing: 0.5px;
+                color: #9060f4; }
+            .workstream .workstream-container .environment .chat-environment .convo-box .Job-chat-container .receiver .chat .message .msg-imgs {
+              display: grid;
+              grid-gap: 10px 10px;
+              grid-template-columns: auto auto auto; }
+              .workstream .workstream-container .environment .chat-environment .convo-box .Job-chat-container .receiver .chat .message .msg-imgs .msg-img {
+                border-radius: 5px;
+                object-fit: cover;
+                object-position: center;
+                height: 56px;
+                width: 85px; }
+            .workstream .workstream-container .environment .chat-environment .convo-box .Job-chat-container .receiver .chat .message .msg-time {
+              font-size: 10px;
+              font-family: "OpenSans";
+              letter-spacing: 0.5px;
+              color: rgba(0, 0, 0, 0.71); }
+          .workstream .workstream-container .environment .chat-environment .convo-box .Job-chat-container .receiver .usr-dp {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            object-position: center;
+            object-fit: cover; }
+    .workstream .workstream-container .environment .chat-environment .convo-footer {
+      height: 10%;
+      padding: 0 1em;
+      border-top: 1px solid lightgray;
+      display: flex; }
+      .workstream .workstream-container .environment .chat-environment .convo-footer .chat-input {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+        width: 100%; }
+        .workstream .workstream-container .environment .chat-environment .convo-footer .chat-input .fa {
+          font-size: 20px;
+          color: rgba(0, 0, 0, 0.51);
+          cursor: pointer;
+          background-color: transparent;
+          border: none; }
+        .workstream .workstream-container .environment .chat-environment .convo-footer .chat-input .input {
+          width: 81%;
+          border: none;
+          height: 30px;
+          font-family: 'Poppins-Bold',SansSerif; }
+          .workstream .workstream-container .environment .chat-environment .convo-footer .chat-input .input::placeholder {
+            color: rgba(0, 0, 0, 0.26); }
+  .workstream .workstream-container .environment .others {
+    width: 25%;
+    overflow: auto; }
+    .workstream .workstream-container .environment .others .reference {
+      height: 100%;
+      overflow: hidden;
+      padding: 0 1em;
+      position: relative; }
+      .workstream .workstream-container .environment .others .reference .attachment_container {
+        margin-top: 1.5em;
+        height: 45%;
+        overflow: hidden; }
+        .workstream .workstream-container .environment .others .reference .attachment_container .title {
+          font-family: "Poppins-Bold";
+          font-size: 14px;
+          letter-spacing: 0.5px;
+          display: flex;
+          align-items: center;
+          gap: 10px; }
+          .workstream .workstream-container .environment .others .reference .attachment_container .title .fa {
+            font-size: 25px;
+            display: none;
+            cursor: pointer; }
+        .workstream .workstream-container .environment .others .reference .attachment_container .box {
+          display: flex;
+          align-items: center;
+          margin: 1em 0;
+          gap: 10px;
+          position: relative; }
+          .workstream .workstream-container .environment .others .reference .attachment_container .box .attachment_option {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            display: none;
+            right: 5px;
+            color: rgba(0, 0, 0, 0.66);
+            font-size: 25px;
+            color: dimgray;
+            cursor: pointer;
+            height: 30px;
+            width: 30px;
+            background-color: transparent; }
+            .workstream .workstream-container .environment .others .reference .attachment_container .box .attachment_option .more-option {
+              position: absolute;
+              background-color: white;
+              right: 0;
+              z-index: 1;
+              box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.16);
+              display: none; }
+              .workstream .workstream-container .environment .others .reference .attachment_container .box .attachment_option .more-option .label {
+                font-family: 'ABeeZee', sans-serif;
+                padding: 10px;
+                letter-spacing: 0.5px;
+                cursor: pointer;
+                font-size: 14px; }
+                .workstream .workstream-container .environment .others .reference .attachment_container .box .attachment_option .more-option .label:hover {
+                  background-color: #e4e4e4; }
+          .workstream .workstream-container .environment .others .reference .attachment_container .box .pdf, .workstream .workstream-container .environment .others .reference .attachment_container .box .doc, .workstream .workstream-container .environment .others .reference .attachment_container .box .txt {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background-color: white;
+            display: flex;
+            font-size: 11px;
+            align-items: center;
+            justify-content: center;
+            font-family: "ABeeZee";
+            color: #9060f4;
+            text-transform: lowercase; }
+          .workstream .workstream-container .environment .others .reference .attachment_container .box .doc-box {
+            line-height: 17px; }
+            .workstream .workstream-container .environment .others .reference .attachment_container .box .doc-box .doc-txt {
+              font-size: 12px;
+              font-family: "Poppins-Bold";
+              letter-spacing: 0.5px;
+              color: rgba(0, 0, 0, 0.78); }
+            .workstream .workstream-container .environment .others .reference .attachment_container .box .doc-box .doc-size {
+              font-size: 11px;
+              font-family: "Poppins-Bold";
+              letter-spacing: 0.5px;
+              color: rgba(0, 0, 0, 0.43); }
+      .workstream .workstream-container .environment .others .reference .attachment_viewALL {
+        font-size: 13px;
+        font-family: "Poppins-Bold", sans-serif;
+        letter-spacing: 0.5px;
+        color: #9060f4;
+        margin-top: 1em; }
+      .workstream .workstream-container .environment .others .reference .membersList_container {
+        position: absolute;
+        background: white;
+        width: 97%;
+        left: 0;
+        right: 0;
+        height: 100%;
+        margin: auto;
+        top: 89%;
+        border-top-right-radius: 7px;
+        border-top-left-radius: 7px; }
+        .workstream .workstream-container .environment .others .reference .membersList_container .header {
+          padding: unset;
+          height: 20%; }
+          @media screen and (max-width: 400px) {
+            .workstream .workstream-container .environment .others .reference .membersList_container .header {
+              height: 21%; } }
+          .workstream .workstream-container .environment .others .reference .membersList_container .header .top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid lightgray;
+            padding: 0 10px;
+            margin-bottom: 5px;
+            height: 70px;
+            cursor: pointer; }
+            .workstream .workstream-container .environment .others .reference .membersList_container .header .top .rightnav-rp {
+              display: none;
+              height: 30px;
+              width: 35px;
+              border-radius: 50%;
+              align-items: center;
+              justify-content: center;
+              font-size: 19px;
+              color: #9060f4;
+              margin-right: 20px;
+              margin-bottom: 3px; }
+              @media screen and (max-width: 991px) {
+                .workstream .workstream-container .environment .others .reference .membersList_container .header .top .rightnav-rp {
+                  display: flex; } }
+              @media screen and (max-width: 500px) {
+                .workstream .workstream-container .environment .others .reference .membersList_container .header .top .rightnav-rp {
+                  display: none; } }
+            .workstream .workstream-container .environment .others .reference .membersList_container .header .top .left {
+              display: flex;
+              align-items: center;
+              gap: 5px;
+              width: 100%; }
+              .workstream .workstream-container .environment .others .reference .membersList_container .header .top .left .ph {
+                position: relative; }
+                .workstream .workstream-container .environment .others .reference .membersList_container .header .top .left .ph .my-ph {
+                  height: 25px;
+                  width: 25px;
+                  border-radius: 50%;
+                  object-position: center;
+                  object-fit: cover; }
+                .workstream .workstream-container .environment .others .reference .membersList_container .header .top .left .ph .fa {
+                  font-size: 9px;
+                  color: green;
+                  position: absolute;
+                  bottom: 6px;
+                  right: 0; }
+              .workstream .workstream-container .environment .others .reference .membersList_container .header .top .left .title {
+                font-family: "Poppins-Bold", serif;
+                font-size: 14px;
+                letter-spacing: 0.5px; }
+            .workstream .workstream-container .environment .others .reference .membersList_container .header .top .right {
+              display: flex;
+              gap: 12px; }
+              @media screen and (max-width: 991px) {
+                .workstream .workstream-container .environment .others .reference .membersList_container .header .top .right .membersList_container_toggler {
+                  display: none; } }
+              .workstream .workstream-container .environment .others .reference .membersList_container .header .top .right .fa, .workstream .workstream-container .environment .others .reference .membersList_container .header .top .right .icon {
+                border: none;
+                font-size: 17px;
+                color: dimgray;
+                cursor: pointer;
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+                transition: 0.5s all;
+                background-color: transparent;
+                position: relative; }
+                .workstream .workstream-container .environment .others .reference .membersList_container .header .top .right .fa:nth-child(2), .workstream .workstream-container .environment .others .reference .membersList_container .header .top .right .icon:nth-child(2) {
+                  font-size: 25px; }
+                .workstream .workstream-container .environment .others .reference .membersList_container .header .top .right .fa:last-child, .workstream .workstream-container .environment .others .reference .membersList_container .header .top .right .icon:last-child {
+                  font-size: 25px; }
+                .workstream .workstream-container .environment .others .reference .membersList_container .header .top .right .fa .more-option, .workstream .workstream-container .environment .others .reference .membersList_container .header .top .right .icon .more-option {
+                  background: white;
+                  position: absolute;
+                  right: 0;
+                  width: 200px;
+                  padding: 6px 0;
+                  top: -174px;
+                  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.18);
+                  margin: auto;
+                  border-radius: 3px;
+                  z-index: 1;
+                  display: none; }
+                  @media screen and (max-width: 991px) {
+                    .workstream .workstream-container .environment .others .reference .membersList_container .header .top .right .fa .more-option, .workstream .workstream-container .environment .others .reference .membersList_container .header .top .right .icon .more-option {
+                      top: 30px; } }
+                  .workstream .workstream-container .environment .others .reference .membersList_container .header .top .right .fa .more-option .opt-ul, .workstream .workstream-container .environment .others .reference .membersList_container .header .top .right .icon .more-option .opt-ul {
+                    list-style: none; }
+                    .workstream .workstream-container .environment .others .reference .membersList_container .header .top .right .fa .more-option .opt-ul .opt-list, .workstream .workstream-container .environment .others .reference .membersList_container .header .top .right .icon .more-option .opt-ul .opt-list {
+                      height: 40px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      font-family: 'ABeeZee',SansSerif;
+                      font-size: 14px;
+                      letter-spacing: 0.4px;
+                      color: rgba(0, 0, 0, 0.52); }
+                      .workstream .workstream-container .environment .others .reference .membersList_container .header .top .right .fa .more-option .opt-ul .opt-list:hover, .workstream .workstream-container .environment .others .reference .membersList_container .header .top .right .icon .more-option .opt-ul .opt-list:hover {
+                        background-color: rgba(0, 0, 0, 0.1); }
+                .workstream .workstream-container .environment .others .reference .membersList_container .header .top .right .fa:hover, .workstream .workstream-container .environment .others .reference .membersList_container .header .top .right .icon:hover {
+                  background: rgba(0, 0, 0, 0.16); }
+              .workstream .workstream-container .environment .others .reference .membersList_container .header .top .right .active {
+                transform: rotate(180deg); }
+          .workstream .workstream-container .environment .others .reference .membersList_container .header .bottom {
+            padding: 5px 10px;
+            position: relative; }
+            .workstream .workstream-container .environment .others .reference .membersList_container .header .bottom .search-container .search {
+              display: flex;
+              align-items: center;
+              border: 1px solid lightgray;
+              width: 90%;
+              margin: auto;
+              height: 40px;
+              border-radius: 5px;
+              gap: 10px;
+              padding: 0 10px;
+              background: rgba(107, 160, 236, 0.27); }
+              .workstream .workstream-container .environment .others .reference .membersList_container .header .bottom .search-container .search .icon {
+                color: rgba(53, 53, 53, 0.7);
+                border: none;
+                font-size: 17px;
+                background-color: transparent;
+                position: relative;
+                cursor: pointer; }
+                .workstream .workstream-container .environment .others .reference .membersList_container .header .bottom .search-container .search .icon .more-option {
+                  background: white;
+                  position: absolute;
+                  right: -15px;
+                  width: 150px;
+                  padding: 6px 0;
+                  top: 32px;
+                  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.18);
+                  margin: auto;
+                  border-radius: 3px;
+                  z-index: 1;
+                  display: none; }
+                  .workstream .workstream-container .environment .others .reference .membersList_container .header .bottom .search-container .search .icon .more-option .filter-ul {
+                    list-style: none; }
+                    .workstream .workstream-container .environment .others .reference .membersList_container .header .bottom .search-container .search .icon .more-option .filter-ul .filter-list {
+                      height: 31px;
+                      display: flex;
+                      align-items: center;
+                      font-family: "ABeeZee", sans-serif;
+                      font-size: 14px;
+                      letter-spacing: 0.4px;
+                      padding-left: 12px;
+                      cursor: pointer;
+                      color: rgba(0, 0, 0, 0.52); }
+                      .workstream .workstream-container .environment .others .reference .membersList_container .header .bottom .search-container .search .icon .more-option .filter-ul .filter-list:hover {
+                        background-color: rgba(0, 0, 0, 0.1); }
+                .workstream .workstream-container .environment .others .reference .membersList_container .header .bottom .search-container .search .icon .active {
+                  background-color: rgba(107, 160, 236, 0.27);
+                  position: relative; }
+                  .workstream .workstream-container .environment .others .reference .membersList_container .header .bottom .search-container .search .icon .active::before {
+                    content: " ";
+                    position: absolute;
+                    height: 100%;
+                    width: 3px;
+                    background-color: cornflowerblue;
+                    left: 0; }
+              .workstream .workstream-container .environment .others .reference .membersList_container .header .bottom .search-container .search .filter {
+                font-family: "ABeeZee", sans-serif;
+                border: none;
+                outline: none;
+                height: 100%;
+                background-color: transparent;
+                width: 100%;
+                font-size: 13px;
+                letter-spacing: 0.5px; }
+            .workstream .workstream-container .environment .others .reference .membersList_container .header .bottom .manage_chat_box {
+              display: none;
+              align-items: center;
+              border: 1px solid lightgray;
+              width: 100%;
+              margin: auto;
+              justify-content: space-between;
+              height: 42px;
+              gap: 10px;
+              background: rgba(107, 160, 236, 0.27);
+              position: absolute;
+              width: 100%;
+              left: 0;
+              top: -5px;
+              right: 0; }
+              .workstream .workstream-container .environment .others .reference .membersList_container .header .bottom .manage_chat_box .left {
+                display: flex;
+                align-items: center;
+                gap: 10px; }
+                .workstream .workstream-container .environment .others .reference .membersList_container .header .bottom .manage_chat_box .left .icon {
+                  border: none;
+                  font-size: 30px;
+                  color: dimgray;
+                  cursor: pointer;
+                  height: 30px;
+                  width: 30px;
+                  border-radius: 50%;
+                  transition: 0.5s all;
+                  background-color: transparent;
+                  position: relative; }
+                  .workstream .workstream-container .environment .others .reference .membersList_container .header .bottom .manage_chat_box .left .icon:hover {
+                    background: rgba(0, 0, 0, 0.16); }
+              .workstream .workstream-container .environment .others .reference .membersList_container .header .bottom .manage_chat_box .selected {
+                font-size: 13px;
+                letter-spacing: 0.5px;
+                font-family: "ABeeZee", sans-serif; }
+            .workstream .workstream-container .environment .others .reference .membersList_container .header .bottom .right .icon {
+              border: none;
+              font-size: 17px;
+              color: rgba(0, 0, 0, 0.18);
+              cursor: pointer;
+              height: 30px;
+              width: 30px;
+              border-radius: 50%;
+              transition: 0.5s all;
+              background-color: transparent;
+              position: relative; }
+              .workstream .workstream-container .environment .others .reference .membersList_container .header .bottom .right .icon:hover {
+                background: rgba(0, 0, 0, 0.16); }
+            .workstream .workstream-container .environment .others .reference .membersList_container .header .bottom .right .active {
+              color: dimgray; }
+        .workstream .workstream-container .environment .others .reference .membersList_container .body {
+          height: 80%;
+          overflow-y: auto;
+          overflow-x: hidden;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          background-color: #f5f5f5; }
+          @media screen and (max-width: 400px) {
+            .workstream .workstream-container .environment .others .reference .membersList_container .body {
+              height: 79%; } }
+          .workstream .workstream-container .environment .others .reference .membersList_container .body .box {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            padding: 5px;
+            height: 80px;
+            cursor: pointer;
+            transition: 0.5s all;
+            background: white;
+            border-radius: 5px; }
+            .workstream .workstream-container .environment .others .reference .membersList_container .body .box.active {
+              background-color: transparent; }
+            .workstream .workstream-container .environment .others .reference .membersList_container .body .box:last-child {
+              margin-bottom: 50px; }
+            @media screen and (max-width: 991px) {
+              .workstream .workstream-container .environment .others .reference .membersList_container .body .box {
+                height: 85px; } }
+            .workstream .workstream-container .environment .others .reference .membersList_container .body .box:hover {
+              background-color: transparent; }
+            .workstream .workstream-container .environment .others .reference .membersList_container .body .box .checker {
+              height: 27px;
+              width: 27px;
+              display: none; }
+            .workstream .workstream-container .environment .others .reference .membersList_container .body .box .pf-container {
+              position: relative;
+              width: 21%; }
+              @media screen and (max-width: 991px) {
+                .workstream .workstream-container .environment .others .reference .membersList_container .body .box .pf-container {
+                  width: 83px; } }
+              .workstream .workstream-container .environment .others .reference .membersList_container .body .box .pf-container .pf {
+                height: 55px;
+                width: 55px;
+                border-radius: 50%;
+                object-position: center;
+                object-fit: cover; }
+              .workstream .workstream-container .environment .others .reference .membersList_container .body .box .pf-container .fa {
+                font-size: 11px;
+                color: springgreen;
+                position: absolute;
+                bottom: 6px;
+                right: 13px; }
+                @media screen and (max-width: 991px) {
+                  .workstream .workstream-container .environment .others .reference .membersList_container .body .box .pf-container .fa {
+                    right: 31px; } }
+            .workstream .workstream-container .environment .others .reference .membersList_container .body .box .group-pf {
+              display: grid;
+              grid-template-columns: auto auto;
+              grid-gap: 3px;
+              width: 21%; }
+              @media screen and (max-width: 991px) {
+                .workstream .workstream-container .environment .others .reference .membersList_container .body .box .group-pf {
+                  width: 83px; } }
+              .workstream .workstream-container .environment .others .reference .membersList_container .body .box .group-pf .pf {
+                height: 31px;
+                width: 31px;
+                border-radius: 50%;
+                object-position: center;
+                object-fit: cover; }
+                @media screen and (max-width: 991px) {
+                  .workstream .workstream-container .environment .others .reference .membersList_container .body .box .group-pf .pf {
+                    height: 40px;
+                    width: 40px; } }
+              .workstream .workstream-container .environment .others .reference .membersList_container .body .box .group-pf .count {
+                height: 31px;
+                width: 31px;
+                background: rgba(99, 99, 255, 0.66);
+                color: white;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                font-size: 12px;
+                font-family: 'Poppins-Bold'; }
+                @media screen and (max-width: 991px) {
+                  .workstream .workstream-container .environment .others .reference .membersList_container .body .box .group-pf .count {
+                    height: 40px;
+                    width: 40px; } }
+            .workstream .workstream-container .environment .others .reference .membersList_container .body .box .member-box {
+              display: flex;
+              flex-direction: column;
+              height: 100%;
+              width: 79%; }
+              .workstream .workstream-container .environment .others .reference .membersList_container .body .box .member-box .name {
+                font-size: 15px;
+                font-family: 'ABeeZee',SansSerif;
+                letter-spacing: 0.5px;
+                text-transform: capitalize;
+                color: rgba(0, 0, 0, 0.78);
+                position: relative;
+                height: 40%;
+                display: flex;
+                align-items: center; }
+                .workstream .workstream-container .environment .others .reference .membersList_container .body .box .member-box .name .message_count {
+                  height: 18px;
+                  width: 18px;
+                  background: rgba(99, 99, 255, 0.36);
+                  color: white;
+                  display: inline-flex;
+                  align-items: center;
+                  justify-content: center;
+                  border-radius: 50%;
+                  font-size: 12px;
+                  font-family: 'Poppins-Bold';
+                  margin-left: 6px; }
+                .workstream .workstream-container .environment .others .reference .membersList_container .body .box .member-box .name .time {
+                  position: absolute;
+                  right: 5px;
+                  font-size: 12px;
+                  color: gray; }
+              .workstream .workstream-container .environment .others .reference .membersList_container .body .box .member-box .log {
+                font-size: 11px;
+                font-family: "ABeeZee", sans-serif;
+                letter-spacing: 0.5px;
+                color: rgba(0, 0, 0, 0.43);
+                display: flex;
+                height: 60%;
+                width: 100%;
+                align-items: center; }
+        .workstream .workstream-container .environment .others .reference .membersList_container .message_requests {
+          height: 80%;
+          overflow-y: auto;
+          overflow-x: hidden; }
+          .workstream .workstream-container .environment .others .reference .membersList_container .message_requests .request_head {
+            border-top: 1px solid lightgray;
+            border-bottom: 1px solid lightgray;
+            background-color: rgba(107, 160, 236, 0.27);
+            height: 25%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: end; }
+            .workstream .workstream-container .environment .others .reference .membersList_container .message_requests .request_head .title {
+              font-family: "Poppins-Bold", serif;
+              letter-spacing: 0.5px;
+              color: rgba(0, 0, 0, 0.81);
+              font-size: 17px;
+              padding: 0 8px; }
+            .workstream .workstream-container .environment .others .reference .membersList_container .message_requests .request_head .text {
+              font-size: 13px;
+              letter-spacing: 0.5px;
+              font-family: "ABeeZee", sans-serif;
+              margin: 6px 0;
+              padding: 0 8px; }
+            .workstream .workstream-container .environment .others .reference .membersList_container .message_requests .request_head .backBTN {
+              font-family: "Poppins-Bold", serif;
+              letter-spacing: 0.5px;
+              color: #9060f4;
+              font-size: 14px;
+              border: none;
+              padding: 0 8px;
+              background-color: transparent;
+              cursor: pointer; }
+          .workstream .workstream-container .environment .others .reference .membersList_container .message_requests .request_body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 74%; }
+            .workstream .workstream-container .environment .others .reference .membersList_container .message_requests .request_body .icon {
+              font-size: 50px;
+              color: slategray; }
+            .workstream .workstream-container .environment .others .reference .membersList_container .message_requests .request_body .description {
+              font-size: 13px;
+              letter-spacing: 0.5px;
+              font-family: 'Delius', sans-serif;
+              text-align: center;
+              color: gray; }
+.workstream .workstream-container .show-member-container {
+  z-index: 1;
+  background: rgba(6, 6, 6, 0.59);
+  position: absolute;
+  width: 100%;
+  display: none;
+  overflow: hidden;
+  justify-content: center;
+  height: 100%;
+  align-items: center; }
+  .workstream .workstream-container .show-member-container .show-members {
+    background: white;
+    height: 85vh;
+    width: 700px;
+    border-radius: 10px; }
+    .workstream .workstream-container .show-member-container .show-members .header {
+      height: 10%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px; }
+      .workstream .workstream-container .show-member-container .show-members .header .title {
+        font-family: "Poppins-Bold", serif;
+        letter-spacing: 0.5px;
+        color: rgba(0, 0, 0, 0.81);
+        font-size: 24px; }
+      .workstream .workstream-container .show-member-container .show-members .header .icon {
+        border: none;
+        font-size: 25px;
+        color: dimgray;
+        cursor: pointer;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        transition: 0.5s all;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .workstream .workstream-container .show-member-container .show-members .header .icon:hover {
+          background: rgba(0, 0, 0, 0.16); }
+    .workstream .workstream-container .show-member-container .show-members .search {
+      height: 18%;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.28); }
+      .workstream .workstream-container .show-member-container .show-members .search .title {
+        margin-bottom: 10px;
+        margin-left: 4%;
+        font-family: "Poppins-Bold", sans-serif;
+        cursor: pointer;
+        color: #9060f4; }
+      .workstream .workstream-container .show-member-container .show-members .search .searcher {
+        display: flex;
+        align-items: center;
+        border: 1px solid rgba(144, 144, 144, 0.7);
+        width: 90%;
+        margin: auto;
+        height: 44px;
+        border-radius: 5px;
+        gap: 10px;
+        padding: 0 10px; }
+        .workstream .workstream-container .show-member-container .show-members .search .searcher .fa {
+          color: rgba(53, 53, 53, 0.7); }
+        .workstream .workstream-container .show-member-container .show-members .search .searcher .searchbar {
+          font-family: "ABeeZee", sans-serif;
+          border: none;
+          outline: none;
+          height: 100%;
+          width: 100%;
+          font-size: 15px; }
+    .workstream .workstream-container .show-member-container .show-members .list {
+      height: 72%;
+      overflow: auto; }
+      .workstream .workstream-container .show-member-container .show-members .list .box {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        padding: 0 4em;
+        margin: 1.4em auto;
+        height: 65px;
+        transition: .5s all;
+        cursor: pointer; }
+        .workstream .workstream-container .show-member-container .show-members .list .box:hover {
+          background-color: rgba(0, 0, 0, 0.16); }
+        .workstream .workstream-container .show-member-container .show-members .list .box .img {
+          height: 40px;
+          width: 40px;
+          border-radius: 4px;
+          object-position: center;
+          object-fit: cover; }
+        .workstream .workstream-container .show-member-container .show-members .list .box .name {
+          font-size: 14px;
+          font-family: "Poppins-Bold", sans-serif;
+          letter-spacing: 0.5px;
+          text-transform: capitalize;
+          color: rgba(0, 0, 0, 0.78); }
+  .workstream .workstream-container .show-member-container .show-user-profile {
+    position: absolute;
+    background-color: white;
+    border-radius: 7px;
+    width: 250px;
+    display: none;
+    border: 1px solid rgba(38, 38, 38, 0.18);
+    box-shadow: 0 0 5px 2px rgba(38, 38, 38, 0.09); }
+    .workstream .workstream-container .show-member-container .show-user-profile .pf {
+      height: 50%;
+      position: relative; }
+      .workstream .workstream-container .show-member-container .show-user-profile .pf::after {
+        content: " ";
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.11);
+        height: 97%;
+        width: 100%;
+        left: 0;
+        right: 0;
+        margin: auto; }
+      .workstream .workstream-container .show-member-container .show-user-profile .pf .img {
+        border-top-right-radius: 7px;
+        border-top-left-radius: 7px;
+        width: 100%;
+        object-fit: cover;
+        max-height: 270px;
+        object-position: center; }
+      .workstream .workstream-container .show-member-container .show-user-profile .pf .fa {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        color: white;
+        font-size: 20px;
+        z-index: 1;
+        cursor: pointer; }
+    .workstream .workstream-container .show-member-container .show-user-profile .details {
+      height: 50%;
+      padding: 1em; }
+      .workstream .workstream-container .show-member-container .show-user-profile .details .name {
+        font-size: 22px;
+        font-family: "Poppins-Bold", sans-serif;
+        letter-spacing: 0.5px;
+        text-transform: capitalize;
+        color: rgba(0, 0, 0, 0.78);
+        line-height: 20px; }
+      .workstream .workstream-container .show-member-container .show-user-profile .details .view-profile {
+        font-size: 12px;
+        font-family: "Poppins-Bold", sans-serif;
+        letter-spacing: 0.5px;
+        text-transform: capitalize;
+        color: #9060f4;
+        cursor: pointer; }
+      .workstream .workstream-container .show-member-container .show-user-profile .details .local {
+        margin-top: 1em;
+        font-size: 12px;
+        font-family: "Poppins-Bold", sans-serif;
+        letter-spacing: 0.5px;
+        text-transform: capitalize;
+        color: rgba(0, 0, 0, 0.78); }
+      .workstream .workstream-container .show-member-container .show-user-profile .details .time {
+        font-size: 13px;
+        font-family: "Poppins-Bold", sans-serif;
+        letter-spacing: 0.5px;
+        text-transform: capitalize;
+        color: rgba(0, 0, 0, 0.78); }
+      .workstream .workstream-container .show-member-container .show-user-profile .details .contact {
+        margin-top: 10px;
+        display: flex;
+        gap: 10px; }
+        .workstream .workstream-container .show-member-container .show-user-profile .details .contact .message, .workstream .workstream-container .show-member-container .show-user-profile .details .contact .call {
+          width: 100%;
+          height: 30px;
+          font-family: "ABeeZee", sans-serif;
+          letter-spacing: 0.5px;
+          background-color: transparent;
+          border: 1px solid rgba(38, 38, 38, 0.18);
+          border-radius: 5px;
+          transition: .5s all; }
+          .workstream .workstream-container .show-member-container .show-user-profile .details .contact .message:hover, .workstream .workstream-container .show-member-container .show-user-profile .details .contact .call:hover {
+            background-color: #9060f4;
+            color: white;
+            border: none; }
+.workstream .workstream-container .show-add-member {
+  z-index: 1;
+  background: rgba(6, 6, 6, 0.59);
+  position: absolute;
+  width: 100%;
+  display: none;
+  overflow: hidden;
+  justify-content: center;
+  height: 100%;
+  align-items: center; }
+  .workstream .workstream-container .show-add-member .box {
+    background: white;
+    width: 600px;
+    border-radius: 10px;
+    padding: 1em; }
+    .workstream .workstream-container .show-add-member .box .title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: "Poppins-Bold", serif;
+      letter-spacing: 0.5px;
+      color: rgba(0, 0, 0, 0.81);
+      font-size: 20px; }
+    .workstream .workstream-container .show-add-member .box .icon {
+      border: none;
+      font-size: 25px;
+      color: dimgray;
+      cursor: pointer;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      transition: 0.5s all;
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .workstream .workstream-container .show-add-member .box .icon:hover {
+        background: rgba(0, 0, 0, 0.16); }
+    .workstream .workstream-container .show-add-member .box .form {
+      margin-top: 1em; }
+      .workstream .workstream-container .show-add-member .box .form .details {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+        .workstream .workstream-container .show-add-member .box .form .details .left {
+          font-size: 13px;
+          letter-spacing: 0.5px;
+          font-family: "ABeeZee", sans-serif;
+          margin-bottom: 10px; }
+        .workstream .workstream-container .show-add-member .box .form .details .right {
+          font-size: 13px;
+          letter-spacing: 0.5px;
+          font-family: "ABeeZee", sans-serif;
+          margin-bottom: 10px; }
+          .workstream .workstream-container .show-add-member .box .form .details .right .span {
+            color: #9060f4; }
+            .workstream .workstream-container .show-add-member .box .form .details .right .span .fa {
+              font-size: 14px;
+              margin-right: 2px; }
+      .workstream .workstream-container .show-add-member .box .form .input {
+        border: 1px solid rgba(144, 144, 144, 0.7);
+        width: 96%;
+        height: 40px;
+        border-radius: 5px;
+        padding: 0 10px;
+        margin-bottom: 2em;
+        font-family: 'Poppins-Bold', sans-serif;
+        letter-spacing: 0.5px;
+        transition: .5s all; }
+        .workstream .workstream-container .show-add-member .box .form .input:focus {
+          border-color: #9060f4; }
+      .workstream .workstream-container .show-add-member .box .form .intro {
+        font-size: 13px;
+        letter-spacing: 0.5px;
+        font-family: "ABeeZee", sans-serif;
+        margin-bottom: 10px; }
+      .workstream .workstream-container .show-add-member .box .form .send {
+        background-color: #9060f4;
+        border: 1px solid #9060f4;
+        height: 35px;
+        width: 103px;
+        border-radius: 2px;
+        font-family: "OpenSans", sans-serif;
+        letter-spacing: 0.5px;
+        float: right;
+        margin-top: 1em;
+        font-size: 12px;
+        color: white; }
+.workstream .workstream-container .send_message_popup {
+  z-index: 1;
+  background: rgba(6, 6, 6, 0.59);
+  position: absolute;
+  width: 100%;
+  display: none;
+  overflow: hidden;
+  justify-content: center;
+  height: 100%;
+  align-items: center; }
+  .workstream .workstream-container .send_message_popup .box {
+    background: white;
+    width: 600px;
+    border-radius: 10px;
+    padding: 1em; }
+    .workstream .workstream-container .send_message_popup .box .title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: "Poppins-Bold", sans-serif;
+      letter-spacing: 0.5px;
+      color: rgba(0, 0, 0, 0.81);
+      font-size: 20px; }
+    .workstream .workstream-container .send_message_popup .box .icon {
+      border: none;
+      font-size: 25px;
+      color: dimgray;
+      cursor: pointer;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      transition: 0.5s all;
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .workstream .workstream-container .send_message_popup .box .icon:hover {
+        background: rgba(0, 0, 0, 0.16); }
+    .workstream .workstream-container .send_message_popup .box .form {
+      margin-top: 1em; }
+      .workstream .workstream-container .send_message_popup .box .form .details {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+        .workstream .workstream-container .send_message_popup .box .form .details .left {
+          font-size: 13px;
+          letter-spacing: 0.5px;
+          font-family: "ABeeZee", sans-serif;
+          margin-bottom: 10px; }
+        .workstream .workstream-container .send_message_popup .box .form .details .right {
+          font-size: 13px;
+          letter-spacing: 0.5px;
+          font-family: "ABeeZee", sans-serif;
+          margin-bottom: 10px; }
+          .workstream .workstream-container .send_message_popup .box .form .details .right .span {
+            color: #9060f4; }
+            .workstream .workstream-container .send_message_popup .box .form .details .right .span .fa {
+              font-size: 14px;
+              margin-right: 2px; }
+      .workstream .workstream-container .send_message_popup .box .form .input {
+        border: 1px solid rgba(144, 144, 144, 0.7);
+        width: 96%;
+        height: 40px;
+        border-radius: 5px;
+        padding: 0 10px;
+        margin-bottom: 2em;
+        font-family: 'Poppins-Bold', sans-serif;
+        letter-spacing: 0.5px;
+        transition: .5s all; }
+        .workstream .workstream-container .send_message_popup .box .form .input:focus {
+          border-color: #9060f4; }
+      .workstream .workstream-container .send_message_popup .box .form .text-area {
+        border: 1px solid rgba(144, 144, 144, 0.7);
+        border-radius: 5px; }
+        .workstream .workstream-container .send_message_popup .box .form .text-area .msg-content {
+          border: none;
+          width: 98%;
+          outline: none;
+          padding: 5px 3px;
+          font-family: 'Poppins-Bold', sans-serif;
+          letter-spacing: 0.5px;
+          transition: .5s all;
+          resize: none;
+          height: 100px;
+          font-size: 14px; }
+        .workstream .workstream-container .send_message_popup .box .form .text-area .tools {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          background: rgba(0, 0, 0, 0.1);
+          height: 37px;
+          border-top: 1px solid rgba(144, 144, 144, 0.7); }
+          .workstream .workstream-container .send_message_popup .box .form .text-area .tools .icon, .workstream .workstream-container .send_message_popup .box .form .text-area .tools .fa {
+            color: rgba(53, 53, 53, 0.7);
+            border: none;
+            font-size: 21px;
+            background-color: transparent;
+            position: relative;
+            cursor: pointer;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            transition: 0.5s all;
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+            .workstream .workstream-container .send_message_popup .box .form .text-area .tools .icon:hover, .workstream .workstream-container .send_message_popup .box .form .text-area .tools .fa:hover {
+              background: rgba(0, 0, 0, 0.16); }
+      .workstream .workstream-container .send_message_popup .box .form .intro {
+        font-size: 13px;
+        letter-spacing: 0.5px;
+        font-family: 'ABeeZee', sans-serif;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        gap: 2px; }
+        .workstream .workstream-container .send_message_popup .box .form .intro .icon {
+          font-size: 17px; }
+      .workstream .workstream-container .send_message_popup .box .form .send {
+        background-color: #9060f4;
+        border: 1px solid #9060f4;
+        height: 35px;
+        width: 103px;
+        border-radius: 2px;
+        font-family: "OpenSans", sans-serif;
+        letter-spacing: 0.5px;
+        float: right;
+        margin-top: 1em;
+        font-size: 12px;
+        color: white; }
+.workstream .workstream-container .new_group_conversation {
+  z-index: 1;
+  background: rgba(6, 6, 6, 0.59);
+  position: absolute;
+  width: 100%;
+  display: none;
+  overflow: hidden;
+  justify-content: center;
+  height: 100%;
+  align-items: center; }
+  .workstream .workstream-container .new_group_conversation .box {
+    background: white;
+    width: 600px;
+    border-radius: 10px;
+    padding: 1em; }
+    .workstream .workstream-container .new_group_conversation .box .title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: "Poppins-Bold", serif;
+      letter-spacing: 0.5px;
+      color: rgba(0, 0, 0, 0.81);
+      font-size: 20px; }
+    .workstream .workstream-container .new_group_conversation .box .icon {
+      border: none;
+      font-size: 25px;
+      color: dimgray;
+      cursor: pointer;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      transition: 0.5s all;
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .workstream .workstream-container .new_group_conversation .box .icon:hover {
+        background: rgba(0, 0, 0, 0.16); }
+    .workstream .workstream-container .new_group_conversation .box .form {
+      margin-top: 1em; }
+      .workstream .workstream-container .new_group_conversation .box .form .details {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+        .workstream .workstream-container .new_group_conversation .box .form .details .left {
+          font-size: 13px;
+          letter-spacing: 0.5px;
+          font-family: "ABeeZee", sans-serif;
+          margin-bottom: 10px; }
+        .workstream .workstream-container .new_group_conversation .box .form .details .right {
+          font-size: 13px;
+          letter-spacing: 0.5px;
+          font-family: "ABeeZee", sans-serif;
+          margin-bottom: 10px; }
+          .workstream .workstream-container .new_group_conversation .box .form .details .right .span {
+            color: #9060f4; }
+            .workstream .workstream-container .new_group_conversation .box .form .details .right .span .fa {
+              font-size: 14px;
+              margin-right: 2px; }
+      .workstream .workstream-container .new_group_conversation .box .form .input {
+        border: 1px solid rgba(144, 144, 144, 0.7);
+        width: 96%;
+        height: 40px;
+        border-radius: 5px;
+        padding: 0 10px;
+        margin-bottom: 2em;
+        font-family: "OpenSans", sans-serif;
+        letter-spacing: 0.5px;
+        transition: .5s all; }
+        .workstream .workstream-container .new_group_conversation .box .form .input:focus {
+          border-color: #9060f4; }
+      .workstream .workstream-container .new_group_conversation .box .form .intro {
+        font-size: 13px;
+        letter-spacing: 0.5px;
+        font-family: "ABeeZee", sans-serif;
+        margin-bottom: 10px; }
+      .workstream .workstream-container .new_group_conversation .box .form .send {
+        background-color: #9060f4;
+        border: 1px solid #9060f4;
+        height: 35px;
+        width: 103px;
+        border-radius: 2px;
+        font-family: "OpenSans", sans-serif;
+        letter-spacing: 0.5px;
+        float: right;
+        margin-top: 1em;
+        font-size: 12px;
+        color: white; }
+      .workstream .workstream-container .new_group_conversation .box .form .message {
+        border: 1px solid rgba(144, 144, 144, 0.7);
+        width: 98%;
+        border-radius: 5px;
+        outline: none;
+        padding: 5px 3px;
+        font-family: "OpenSans", sans-serif;
+        letter-spacing: 0.5px;
+        transition: .5s all;
+        resize: none;
+        height: 100px;
+        font-size: 14px; }
+        .workstream .workstream-container .new_group_conversation .box .form .message:focus {
+          border-color: #9060f4; }
+.workstream .workstream-container .messaging_settings {
+  z-index: 1;
+  background: rgba(6, 6, 6, 0.59);
+  position: absolute;
+  width: 100%;
+  display: none;
+  overflow: hidden;
+  justify-content: center;
+  height: 100%;
+  align-items: center; }
+  .workstream .workstream-container .messaging_settings .box {
+    background: white;
+    width: 60vw;
+    border-radius: 10px; }
+    @media screen and (max-width: 700px) {
+      .workstream .workstream-container .messaging_settings .box {
+        width: 95%; } }
+    .workstream .workstream-container .messaging_settings .box .setting {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid lightgray;
+      padding: 1em;
+      align-items: center; }
+      .workstream .workstream-container .messaging_settings .box .setting .title {
+        font-family: "Poppins-Bold", serif;
+        letter-spacing: 0.5px;
+        color: rgba(0, 0, 0, 0.81);
+        font-size: 20px; }
+      .workstream .workstream-container .messaging_settings .box .setting .icon {
+        border: none;
+        font-size: 25px;
+        color: dimgray;
+        cursor: pointer;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        transition: 0.5s all;
+        background-color: transparent;
+        position: relative; }
+        .workstream .workstream-container .messaging_settings .box .setting .icon:hover {
+          background: rgba(0, 0, 0, 0.16); }
+      .workstream .workstream-container .messaging_settings .box .setting .text {
+        font-family: "ABeeZee", serif;
+        letter-spacing: 0.5px;
+        color: rgba(0, 0, 0, 0.81);
+        font-size: 14px; }
+      .workstream .workstream-container .messaging_settings .box .setting .link {
+        font-family: "ABeeZee", serif;
+        letter-spacing: 0.5px;
+        color: #9060f4;
+        font-size: 14px; }
+      .workstream .workstream-container .messaging_settings .box .setting .switch {
+        display: contents; }
+        .workstream .workstream-container .messaging_settings .box .setting .switch .checkbox {
+          height: 0;
+          width: 0;
+          visibility: hidden; }
+        .workstream .workstream-container .messaging_settings .box .setting .switch #openl, .workstream .workstream-container .messaging_settings .box .setting .switch #soundl {
+          cursor: pointer;
+          text-indent: -9999px;
+          width: 50px;
+          height: 30px;
+          background: grey;
+          display: block;
+          border-radius: 100px;
+          position: relative; }
+        .workstream .workstream-container .messaging_settings .box .setting .switch #openl:after, .workstream .workstream-container .messaging_settings .box .setting .switch #soundl:after {
+          content: '';
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          width: 20px;
+          height: 20px;
+          background: #fff;
+          border-radius: 90px;
+          transition: 0.3s; }
+        .workstream .workstream-container .messaging_settings .box .setting .switch .checkbox:checked + #open, .workstream .workstream-container .messaging_settings .box .setting .switch .checkbox:checked + #soundl {
+          background: #9060f4; }
+        .workstream .workstream-container .messaging_settings .box .setting .switch .checkbox:checked + #openl:after, .workstream .workstream-container .messaging_settings .box .setting .switch .checkbox:checked + #soundl:after {
+          left: calc(100% - 5px);
+          transform: translateX(-100%); }
+.workstream .workstream-container .voice_call_popup {
+  z-index: 1;
+  background: rgba(6, 6, 6, 0.59);
+  position: absolute;
+  width: 100%;
+  display: none;
+  overflow: hidden;
+  justify-content: center;
+  height: 100%;
+  align-items: center; }
+  .workstream .workstream-container .voice_call_popup .box {
+    background: white;
+    width: 60%;
+    position: relative;
+    height: 80%;
+    border-radius: 10px; }
+    .workstream .workstream-container .voice_call_popup .box .receiver-wallpaper {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+      object-position: center; }
+    .workstream .workstream-container .voice_call_popup .box .cover {
+      position: absolute;
+      height: 100%;
+      border-radius: 10px;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.22); }
+      .workstream .workstream-container .voice_call_popup .box .cover .top {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        width: 95%;
+        margin: 30px auto; }
+        .workstream .workstream-container .voice_call_popup .box .cover .top .caller-pf {
+          height: 50px;
+          width: 50px;
+          border-radius: 50%;
+          object-position: center;
+          object-fit: cover; }
+        .workstream .workstream-container .voice_call_popup .box .cover .top .timer {
+          background-color: #ffdb6e;
+          width: 56px;
+          border-radius: 5px;
+          text-align: center;
+          padding: 2px 0; }
+          .workstream .workstream-container .voice_call_popup .box .cover .top .timer .count {
+            color: black;
+            font-family: 'ABeeZee';
+            letter-spacing: 0.5px;
+            font-size: 14px; }
+      .workstream .workstream-container .voice_call_popup .box .cover .footer {
+        display: flex;
+        gap: 19px;
+        position: absolute;
+        bottom: 8%;
+        right: 0;
+        left: 0;
+        margin: auto;
+        justify-content: center;
+        align-items: center; }
+        .workstream .workstream-container .voice_call_popup .box .cover .footer .icon {
+          height: 45px;
+          width: 45px;
+          border: none;
+          border-radius: 50%;
+          font-size: 20px;
+          cursor: pointer; }
+          .workstream .workstream-container .voice_call_popup .box .cover .footer .icon:nth-child(3) {
+            transform: rotate(133deg);
+            height: 60px;
+            width: 60px;
+            background: #ff6035;
+            color: white;
+            font-size: 30px; }
+.workstream .workstream-container .minimized_voice_call {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.72);
+  position: absolute;
+  bottom: 19px;
+  width: 300px;
+  padding: 5px;
+  border-radius: 5px;
+  left: 13px;
+  box-shadow: 0 0 5px 2px rgba(168, 168, 168, 0.15); }
+  .workstream .workstream-container .minimized_voice_call .left {
+    display: flex;
+    align-items: center;
+    gap: 10px; }
+    .workstream .workstream-container .minimized_voice_call .left .caller-pf {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      object-position: center;
+      object-fit: cover; }
+    .workstream .workstream-container .minimized_voice_call .left .timer {
+      width: 56px;
+      border-radius: 5px;
+      text-align: center;
+      padding: 2px 0; }
+      .workstream .workstream-container .minimized_voice_call .left .timer .count {
+        color: white;
+        font-family: 'ABeeZee';
+        letter-spacing: 0.5px;
+        font-size: 14px; }
+  .workstream .workstream-container .minimized_voice_call .right {
+    display: flex;
+    gap: 10px; }
+    .workstream .workstream-container .minimized_voice_call .right .icon {
+      height: 40px;
+      width: 40px;
+      border: none;
+      border-radius: 50%;
+      font-size: 20px;
+      cursor: pointer; }
+      .workstream .workstream-container .minimized_voice_call .right .icon:first-child {
+        transform: rotate(133deg);
+        background: #ff6035;
+        color: white; }
+.workstream .workstream-container .report {
+  z-index: 1;
+  background: rgba(6, 6, 6, 0.59);
+  position: absolute;
+  width: 100%;
+  display: none;
+  overflow: hidden;
+  justify-content: center;
+  height: 100%;
+  align-items: center; }
+  .workstream .workstream-container .report .box {
+    background: white;
+    width: 30%;
+    position: relative;
+    height: auto;
+    border-radius: 10px;
+    padding: 20px; }
+    .workstream .workstream-container .report .box .title {
+      font-family: "Poppins-Bold", serif;
+      letter-spacing: 0.5px;
+      color: rgba(0, 0, 0, 0.81);
+      font-size: 18px; }
+    .workstream .workstream-container .report .box .describe {
+      font-family: "Poppins", serif;
+      letter-spacing: 0.5px;
+      color: rgba(0, 0, 0, 0.81);
+      font-size: 14px;
+      margin-top: 30px; }
+    .workstream .workstream-container .report .box .report_user {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 1em; }
+      .workstream .workstream-container .report .box .report_user .switch {
+        display: contents; }
+        .workstream .workstream-container .report .box .report_user .switch .checkbox {
+          height: 0;
+          width: 0;
+          display: none; }
+        .workstream .workstream-container .report .box .report_user .switch .report_toggle {
+          cursor: pointer;
+          text-indent: -9999px;
+          width: 50px;
+          height: 30px;
+          background: grey;
+          display: block;
+          border-radius: 100px;
+          position: relative; }
+        .workstream .workstream-container .report .box .report_user .switch .report_toggle:after {
+          content: '';
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          width: 20px;
+          height: 20px;
+          background: #fff;
+          border-radius: 90px;
+          transition: 0.3s; }
+        .workstream .workstream-container .report .box .report_user .switch .checkbox:checked + #open, .workstream .workstream-container .report .box .report_user .switch .checkbox:checked + .report_toggle {
+          background: #9060f4; }
+        .workstream .workstream-container .report .box .report_user .switch .checkbox:checked + .report_toggle:after {
+          left: calc(100% - 5px);
+          transform: translateX(-100%); }
+      .workstream .workstream-container .report .box .report_user .text {
+        letter-spacing: 0.5px;
+        font-family: 'Poppins',SansSerif;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.81); }
+    .workstream .workstream-container .report .box .footer {
+      display: flex;
+      align-items: center;
+      margin-top: 2em;
+      justify-content: flex-end;
+      gap: 25px; }
+      .workstream .workstream-container .report .box .footer .btn {
+        background-color: transparent;
+        font-family: "ABeeZee", sans-serif;
+        letter-spacing: 0.5px;
+        float: right;
+        font-size: 15px;
+        border: none;
+        color: rgba(0, 0, 0, 0.81);
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: 0.5s all; }
+        .workstream .workstream-container .report .box .footer .btn:hover {
+          color: #9060f4; }
+.workstream .workstream-container .remove_user {
+  z-index: 1;
+  background: rgba(6, 6, 6, 0.59);
+  position: absolute;
+  width: 100%;
+  display: none;
+  overflow: hidden;
+  justify-content: center;
+  height: 100%;
+  align-items: center; }
+  .workstream .workstream-container .remove_user .box {
+    background: white;
+    width: 30%;
+    position: relative;
+    height: auto;
+    border-radius: 10px;
+    padding: 20px; }
+    .workstream .workstream-container .remove_user .box .title {
+      font-family: "Poppins-Bold", serif;
+      letter-spacing: 0.5px;
+      color: rgba(0, 0, 0, 0.81);
+      font-size: 18px; }
+    .workstream .workstream-container .remove_user .box .describe {
+      font-family: "Poppins", serif;
+      letter-spacing: 0.5px;
+      color: rgba(0, 0, 0, 0.81);
+      font-size: 14px;
+      margin-top: 30px; }
+    .workstream .workstream-container .remove_user .box .footer {
+      display: flex;
+      align-items: center;
+      margin-top: 2em;
+      justify-content: flex-end;
+      gap: 25px; }
+      .workstream .workstream-container .remove_user .box .footer .btn {
+        background-color: transparent;
+        font-family: "ABeeZee", sans-serif;
+        letter-spacing: 0.5px;
+        float: right;
+        font-size: 15px;
+        border: none;
+        color: rgba(0, 0, 0, 0.81);
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: 0.5s all; }
+        .workstream .workstream-container .remove_user .box .footer .btn:hover {
+          color: #9060f4; }
+.workstream .workstream-container .mobile_navigation {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  height: 50px;
+  bottom: 0;
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid lightgray; }
+  @media screen and (max-width: 500px) {
+    .workstream .workstream-container .mobile_navigation {
+      display: flex; } }
+  .workstream .workstream-container .mobile_navigation .icon {
+    border: none;
+    font-size: 30px;
+    color: lightslategray;
+    cursor: pointer;
+    height: 100%;
+    width: 35px;
+    border-radius: 50%;
+    transition: 0.5s all;
+    background-color: transparent;
+    position: relative; }
+@media screen and (max-width: 1244px) {
+  .workstream .left_menu_nav_closeBTN {
+    display: block !important; }
+  .workstream .environment .chat-environment {
+    position: relative; }
+  .workstream .environment .others {
+    width: 28% !important; }
+  .workstream .workstream-container .environment {
+    width: 100% !important;
+    margin-left: 0 !important; } }
+@media screen and (max-width: 991px) {
+  .workstream .environment .others {
+    position: fixed;
+    background: #f5f5f5 !important;
+    width: 100vw !important;
+    height: 100vh;
+    padding: unset;
+    right: 0; }
+  .workstream .environment .chat-environment {
+    background: white;
+    width: 100% !important;
+    height: 100vh !important;
+    border-radius: 0 !important;
+    margin: auto;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.16); }
+  .workstream .environment .users-list .usl .list .usr-dp {
+    height: 40px !important;
+    width: 40px !important; }
+  .workstream .environment .users-list .usl .list .fa {
+    height: 40px !important;
+    width: 40px !important; }
+  .workstream .environment .others .reference .membersList_container {
+    top: 0 !important;
+    width: 100% !important; } }
+@media screen and (max-width: 664px) {
+  .workstream .chat-environment .convo-box {
+    padding: 0 0.5em !important; }
+  .workstream .chat-environment .header {
+    padding: 0 4px !important; }
+  .workstream .workstream-container .show-member-container .show-members .header .title {
+    font-size: 17px; } }
+
+/*# sourceMappingURL=style.css.map */

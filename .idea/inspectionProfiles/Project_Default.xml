@@ -1,0 +1,32 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="18">
+            <item index="0" class="java.lang.String" itemvalue="go_minimized_call" />
+            <item index="1" class="java.lang.String" itemvalue="close_voice_call" />
+            <item index="2" class="java.lang.String" itemvalue="go_maximized_call" />
+            <item index="3" class="java.lang.String" itemvalue="mobile_navigation" />
+            <item index="4" class="java.lang.String" itemvalue="minimized_voice_call" />
+            <item index="5" class="java.lang.String" itemvalue="make_voice_call" />
+            <item index="6" class="java.lang.String" itemvalue="voice_call_popup" />
+            <item index="7" class="java.lang.String" itemvalue="report_user" />
+            <item index="8" class="java.lang.String" itemvalue="cancel_report_user" />
+            <item index="9" class="java.lang.String" itemvalue="report_userbtn" />
+            <item index="10" class="java.lang.String" itemvalue="remove_user" />
+            <item index="11" class="java.lang.String" itemvalue="cancel_remove_user" />
+            <item index="12" class="java.lang.String" itemvalue="remove_userbtn" />
+            <item index="13" class="java.lang.String" itemvalue="filter_input" />
+            <item index="14" class="java.lang.String" itemvalue="search-droplet" />
+            <item index="15" class="java.lang.String" itemvalue="search_result" />
+            <item index="16" class="java.lang.String" itemvalue="search_li" />
+            <item index="17" class="java.lang.String" itemvalue="app-data" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+  </profile>
+</component>
